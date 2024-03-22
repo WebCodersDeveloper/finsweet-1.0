@@ -8,6 +8,7 @@ import Media from './pages/Media';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Donate from './pages/Donate';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="donate" element={<Donate />} />
           <Route path="*" element={<NoPage />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

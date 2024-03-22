@@ -10,7 +10,11 @@ export default {
         roboto: ['Roboto','sans-serif'],
       },
       backgroundImage:{
-        'heroBg' : "url('./image/heroBannner.png')"
+        'heroBg' : "url('./image/heroBannner.png')",
+        'tree' : "url('./image/bgTree.svg')",
+        'city' : "url('./image/bgCity.svg')",
+        'wildlife' : "url('./image/bgWildlife.svg')",
+        'donate' : "url('./image/donateBg.svg')",
       },
       backgroundSize :{
         'standart' : "100%"

@@ -1,7 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+    font-family: Roboto;
+}
 
 .blur{
     backdrop-filter: blur(5px);
+}
+.before::before{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 2px;
+    background: #1D2130;
+    top: 50%;
+    left: -80%;
+}
+.text::before{
+    content: 'OUR SUPPORTERS';
+    position: absolute;
+    color: #1D2130;
+    font-size: 16px;
+    font-weight: 500;
+    top: 0;
+    left: 3.5%;
+}
+.text::after{
+    content: '';
+    position: absolute;
+    background: #E5E5E5;
+    width: 81%;
+    height: 1px;
+    top: 8%;
+    left: 15%;
+}
+.plans::before{
+    content: '';
+    position: absolute;
+    background: #E5E5E5;
+    left: 3%;
+    top: 5%;
+    width: 2px;
+    height: 545px;
+}
+.title-line::before{
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 2.5px;
+    background: #1D2130;
+    top: 50%;
+    left: -13%;
+}
+.title-second-line::before{
+    content: '';
+    position: absolute;
+    width: 62px;
+    height: 2.5px;
+    background: #1D2130;
+    top: 50%;
+    left: -7%;
+}
+.left-line::before{
+    content: '';
+    position: absolute;
+    width: 981px;
+    height: 2px;
+    background: #E5E5E5;
+    top: 50%;
+    left: 23%;
+}
+.sep::before{
+    content: 'SEP';
+    position: absolute;
+    color: #1D2130;
+    font-weight: 500;
+    font-size: 16px;
+    left: 0;
+    top: 101%;
+}
+.text-line::after{
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 1.5px;
+    background: #1D2130;
+    top: 50%;
+    left: 105%;
 }

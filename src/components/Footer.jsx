@@ -1,4 +1,5 @@
 import LogoWhite from "../assets/LogoWhite.svg"
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -15,10 +16,10 @@ export default function Footer() {
                 </ul>
                 <ul className="flex flex-col gap-5">
                     <li className="text-white font-bold text-2xl">More</li>
-                    <li className="opacity-[70%] text-white font-light text-lg mt-3">Projects</li>
-                    <li className="opacity-[70%] text-white font-light text-lg">Events</li>
-                    <li className="opacity-[70%] text-white font-light text-lg">Donate</li>
-                    <li className="opacity-[70%] text-white font-light text-lg">Blog</li>
+                    <li className="opacity-[70%] text-white font-light text-lg mt-3"><Link to="/projects" >Projects</Link></li>
+                    <li className="opacity-[70%] text-white font-light text-lg"><Link to="/events" >Events</Link></li>
+                    <li className="opacity-[70%] text-white font-light text-lg"><Link to="/donate" >Donate</Link></li>
+                    <li className="opacity-[70%] text-white font-light text-lg"><Link to="/blogs" >Blogs</Link></li>
                 </ul>
                 <ul className="flex flex-col gap-5">
                     <li className="text-white font-bold text-2xl">Connect</li>

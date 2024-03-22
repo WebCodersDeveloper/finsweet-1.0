@@ -9,6 +9,9 @@ import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Donate from './pages/Donate';
 import Footer from './components/Footer';
+import Projects from './pages/Projects';
+import Blogs from './pages/Blogs';
+import Event from './pages/Event';
 
 export default function App() {
   return (
@@ -21,6 +24,9 @@ export default function App() {
           <Route path="media" element={<Media />} />
           <Route path="contact" element={<Contact />} />
           <Route path="donate" element={<Donate />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="event" element={<Event />} />
           <Route path="*" element={<NoPage />} />
       </Routes>
       <Footer />

@@ -3,7 +3,7 @@ import {  Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="bg-white w-full h-16 flex items-center justify-around gap-20">
+    <div className="bg-white w-[90%] h-16 flex items-center justify-between">
         <Link to='/'><img src={Logo} alt="" /></Link>
         <ul className='flex gap-10 h-full items-center'>
             <li>

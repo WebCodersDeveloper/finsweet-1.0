@@ -1,6 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoPlayCircle } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
+
 import Logo  from "../assets/LogoWhite.svg"
 import Logo1 from "../assets/Logo1.svg";
 import Logo2 from "../assets/Logo2.svg";
@@ -12,15 +14,130 @@ import Image from "../assets/Image.svg";
 import { plans } from "../components/plan";
 import PieChartWithPaddingAngle from "../components/PieChartWithPaddingAngle ";
 import { ourNews } from "../components/news";
+import { useEffect, useRef } from "react";
 export default function Home() {
+
+  const titleRef = useRef(null);
+  const btnRef = useRef(null);
+  const topRef = useRef(null);
+  const brandRef = useRef(null);
+  const containerRef = useRef(null);
+  const infoRef = useRef(null);
+  const bottomRef = useRef(null);
+  const statusRef = useRef(null);
+  const bannerRef = useRef(null);
+  const newsRef = useRef(null);
+  const eventRef = useRef(null);
+  const circleRef = useRef(null);
+
+  useEffect(() => {
+    ScrollReveal().reveal(titleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(eventRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(topRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(bannerRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(containerRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(btnRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(statusRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(brandRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(infoRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(circleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(newsRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+    ScrollReveal().reveal(bottomRef.current, {
+      origin: 'bottom',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: true,
+    });
+  },[])
+
+
   return (
     <div className="flex flex-col w-full">
       <div className="bg-heroBg bg-standart w-full h-[735px] flex flex-col items-center justify-center ">
         <div className="w-[90%] h-[90%] gap-16 flex flex-col justify-center">
-          <h1 className="w-[640px] text-white text-6xl font-medium leading-tight">
+          <h1 ref={titleRef} className="w-[640px] text-white text-6xl font-medium leading-tight">
             Save the environment today for a better tomorrow
           </h1>
-          <div className="flex gap-16">
+          <div ref={btnRef} className="flex gap-16">
             <button className="w-36 h-12 bg-white rounded text-base font-medium text-black">
               <Link to="/whatWedo">What we do</Link>
             </button>
@@ -37,7 +154,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[800px] flex flex-col items-center">
-        <div className="w-[90%] h-[85%] flex items-center">
+        <div ref={topRef} className="w-[90%] h-[85%] flex items-center">
           <div className="h-[70%] w-[60%] flex flex-col items-start justify-around pl-14">
             <h3 className="text-base font-bold before relative uppercase">
               Know About us
@@ -72,7 +189,7 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
-        <div className="relative text w-[95%] h-[15%] flex items-center justify-around">
+        <div ref={brandRef} className="relative text w-[95%] h-[15%] flex items-center justify-around">
           <img src={Logo1} alt="" />
           <img src={Logo2} alt="" />
           <img src={Logo3} alt="" />
@@ -82,7 +199,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[950px] bg-[#EFF7F2] flex items-center justify-center">
-        <div className="w-[90%] h-full flex items-center">
+        <div ref={containerRef} className="w-[90%] h-full flex items-center">
           <div className="w-[50%] h-[90%] flex flex-col justify-around pl-10">
             <h3 className="text-base font-bold title-line relative uppercase">
               what we do
@@ -117,7 +234,7 @@ export default function Home() {
       </div>
       <div className="flex items-center justify-center w-full h-[850px] bg-white">
         <div className="w-[90%] h-[90%] flex flex-col items-center justify-center gap-20">
-          <div className="w-full flex flex-col gap-4 pl-10">
+          <div ref={infoRef} className="w-full flex flex-col gap-4 pl-10">
             <h3 className="text-base font-bold title-second-line relative uppercase">
               Projects we have done
             </h3>
@@ -125,7 +242,7 @@ export default function Home() {
               We are Creating sustainable society, for everyone and forever.
             </h2>
           </div>
-          <div className="flex w-full justify-around items-center">
+          <div ref={bottomRef} className="flex w-full justify-around items-center">
             <div className="bg-tree bg-standart bg-no-repeat w-[415px] h-[415px] overflow-hidden rounded-xl ">
               <div className="w-full h-full bg-[#00000075] flex flex-col gap-4 px-[15%] pt-[15%]">
                 <h3 className="text-white text-[28px] font-bold w-[315px]">
@@ -136,7 +253,7 @@ export default function Home() {
                   Suspendisse varius enim in eros.
                 </p>
                 <button className="w-[132px] hover:bg-transparent hover:text-white h-[51px] rounded bg-white border-2 border-white transition-all mt-[15%]">
-                  See more
+                 <Link to='/projects'> See more</Link>
                 </button>
               </div>
             </div>
@@ -150,7 +267,7 @@ export default function Home() {
                   Suspendisse varius enim in eros.
                 </p>
                 <button className="w-[132px] hover:bg-transparent hover:text-white h-[51px] rounded bg-white border-2 border-white transition-all mt-[15%]">
-                  See more
+                  <Link to='/events'>See more</Link>
                 </button>
               </div>
             </div>
@@ -164,7 +281,7 @@ export default function Home() {
                   Suspendisse varius enim in eros.
                 </p>
                 <button className="w-[132px] hover:bg-transparent hover:text-white h-[51px] rounded bg-white border-2 border-white transition-all mt-[15%]">
-                  See more
+                  <Link to='/blogs'>See more</Link>
                 </button>
               </div>
             </div>
@@ -172,7 +289,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[570px] bg-[#0B0706] flex items-center">
-        <div className="w-[615px] h-[285px] ml-[8%] flex flex-col justify-around">
+        <div ref={statusRef} className="w-[615px] h-[285px] ml-[8%] flex flex-col justify-around">
           <h2 className="font-bold text-5xl w-[611px] text-white">
             How we spend your donations and where it goes
           </h2>
@@ -214,14 +331,14 @@ export default function Home() {
           </div>
         </div>
         <div className="w-[500px] h-full flex items-center justify-center relative ml-[15%]">
-          <div className="absolute">
+          <div ref={circleRef} className="absolute">
             <PieChartWithPaddingAngle />
           </div>
           <img src={Logo} alt="" />
         </div>
       </div>
       <div className="w-full h-[800px] py-4 flex items-center justify-center">
-        <div className="w-[85%] h-[50%] overflow-hidden bg-donate bg-standart rounded-xl">
+        <div ref={bannerRef} className="w-[85%] h-[50%] overflow-hidden bg-donate bg-standart rounded-xl">
           <div className="w-full h-full bg-[#0000007b] flex flex-col items-center justify-center gap-16">
             <h2 className="text-white w-[631px] text-center font-bold text-5xl">
               You can contribute to make the environment greener!
@@ -231,14 +348,14 @@ export default function Home() {
                 Join as a volunteer
               </button>
               <button className="w-[116px] h-[51px] rounded transition-all bg-[#fff] hover:bg-[#33a639] text-black hover:text-white text-base font-medium">
-                Donate
+                <Link to="/donate">Donate</Link>
               </button>
             </span>
           </div>
         </div>
       </div>
       <div className="w-full h-[550px] flex items-center justify-center">
-        <div className="w-[85%] h-[90%] flex flex-col justify-between">
+        <div ref={newsRef} className="w-[85%] h-[90%] flex flex-col justify-between">
           <h2 className="text-[#1D2130] font-medium text-[40px] relative left-line">
             Read Our News
           </h2>
@@ -254,7 +371,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[550px] flex items-center justify-center">
-          <div className="w-[85%] h-[70%] flex flex-col justify-between">
+          <div ref={eventRef} className="w-[85%] h-[70%] flex flex-col justify-between">
             <h2 className="text-[#1D2130] font-medium text-[40px] relative left-line">
               Our Events
             </h2>

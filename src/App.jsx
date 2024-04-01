@@ -26,7 +26,7 @@ export default function App() {
           <Route path="donate" element={<Donate />} />
           <Route path="projects" element={<Projects />} />
           <Route path="blogs" element={<Blogs />} />
-          <Route path="event" element={<Event />} />
+          <Route path="events" element={<Event />} />
           <Route path="*" element={<NoPage />} />
       </Routes>
       <Footer />

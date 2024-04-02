@@ -5,10 +5,9 @@ import photo4 from "../../image/Thumbnail4.svg"
 
 
 
-export const ourNews = [
-    {
+export const ourNews = [{
         img: photo1,
-        title: 'Don’t destroy greenery and don’t spoil scenery',
+        title: 'Don`t destroy greenery and don`t spoil scenery',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim'
     },
     {

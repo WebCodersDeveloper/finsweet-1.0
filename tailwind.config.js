@@ -10,11 +10,11 @@ export default {
         roboto: ['Roboto','sans-serif'],
       },
       backgroundImage:{
-        'heroBg' : "url('./image/heroBannner.png')",
-        'tree' : "url('./image/bgTree.svg')",
-        'city' : "url('./image/bgCity.svg')",
-        'wildlife' : "url('./image/bgWildlife.svg')",
-        'donate' : "url('./image/donateBg.svg')",
+        'heroBg' : "url('./src/image/heroBannner.png')",
+        'tree' : "url('./src/image/bgTree.svg ')",
+        'city' : "url('./src/image/bgCity.svg')",
+        'wildlife' : "url('./src/image/bgWildlife.svg')",
+        'donate' : "url('./src/image/donateBg.svg')",
       },
       backgroundSize :{
         'standart' : "100%"

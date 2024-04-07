@@ -1,7 +1,7 @@
-import animal from '../../image/animal.svg'
-import building from '../../image/building.svg'
-import plantation from '../../image/plantation.svg'
-import water from '../../image/water.svg'
+import animal from '../image/animal.svg'
+import building from '../image/building.svg'
+import plantation from '../image/plantation.svg'
+import water from '../image/water.svg'
 
 export const plans = [
     {

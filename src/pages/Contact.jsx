@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../assets/galochka.png";
 
 const Contact = () => {
@@ -14,7 +13,7 @@ const Contact = () => {
               </span>
             </span>
             <h1 className="ml-20 text-custom-color mt-5 font-bold text-6xl leading-[120%] tracking-normal text-left w-[500px]">
-              We'd love to hear from you
+              We`d love to hear from you
             </h1>
             <p className="text-gray-600 ml-20 mt-5 font-normal w-[500px] text-base leading-relaxed tracking-normal text-left">
               Have any question in mind or want to enquire? Please feel free to
@@ -24,7 +23,7 @@ const Contact = () => {
           <div className="flex flex-col gap-y-10 w-[48%]">
             <span className="flex flex-col ">
               <p className=" font-roboto text-3xl font-bold leading-relaxed tracking-normal text-left">
-                Let's talk!{" "}
+                Let`s talk!{" "}
               </p>{" "}
               <span className="flex gap-x-7">
                 {" "}

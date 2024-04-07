@@ -1,7 +1,7 @@
-import photo1 from "../../image/Thumbnail.svg"
-import photo2 from "../../image/Thumbnail2.svg"
-import photo3 from "../../image/Thumbnail3.svg"
-import photo4 from "../../image/Thumbnail4.svg"
+import photo1 from "../image/Thumbnail.svg"
+import photo2 from "../image/Thumbnail2.svg"
+import photo3 from "../image/Thumbnail3.svg"
+import photo4 from "../image/Thumbnail4.svg"
 
 
 

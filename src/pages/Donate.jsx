@@ -1,5 +1,6 @@
 import React from 'react'
 import donate from '../components/img/donate.png'
+import ScrollReveal from "scrollreveal";
 const Donate = () => {
   return (
     <>

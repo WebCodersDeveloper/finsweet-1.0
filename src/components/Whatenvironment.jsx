@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { plans } from './plan2'
+import ScrollReveal from 'scrollreveal';
 const Whatenvironment = () => {
+    const titlRef = useRef(null);
+ useEffect(() => {
+    ScrollReveal().reveal(titlRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  })
   return (
   
     <div className='bg-[#EFF7F2] w-full mb-10 '>
-        <div className=' py-24  pl-36  '>
+        <div ref={titlRef} className=' py-24  pl-36  '>
             <h2 className='text-custom-color font-bold text-5xl leading-[120%] tracking-normal text-left'>What we do for the environment</h2>
         <div className='mt-16 mb-6 '>
   <div className="grid grid-cols-3 gap-y-16 gap-x-8 w-full h-[70%] items-center justify-between ">

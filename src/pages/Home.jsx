@@ -37,7 +37,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(eventRef.current, {
       origin: 'top',
@@ -45,7 +45,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(topRef.current, {
       origin: 'top',
@@ -53,7 +53,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(bannerRef.current, {
       origin: 'top',
@@ -61,7 +61,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(containerRef.current, {
       origin: 'top',
@@ -69,7 +69,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(btnRef.current, {
       origin: 'left',
@@ -77,7 +77,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(statusRef.current, {
       origin: 'left',
@@ -85,7 +85,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(brandRef.current, {
       origin: 'left',
@@ -93,7 +93,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(infoRef.current, {
       origin: 'left',
@@ -101,7 +101,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(circleRef.current, {
       origin: 'top',
@@ -109,7 +109,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(newsRef.current, {
       origin: 'top',
@@ -117,7 +117,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
     ScrollReveal().reveal(bottomRef.current, {
       origin: 'bottom',
@@ -125,7 +125,7 @@ export default function Home() {
       duration: 1000,
       delay: 300,
       easing: 'ease',
-      reset: true,
+      reset: false,
     });
   },[])
 

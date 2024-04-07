@@ -1,14 +1,46 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import woman from '../components/img/woman.png'
 import dog from '../components/img/dog.png'
 import twoman from '../components/img/twoman.png'
 import { ourNews } from "../components/news";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ScrollReveal from "scrollreveal";
 const Media = () => {
+   const newsRef = useRef(null);
+  const eventRef = useRef(null);
+  const circleRef = useRef(null);
+
+  useEffect(() => {
+    ScrollReveal().reveal(newsRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+       ScrollReveal().reveal(circleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(eventRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  })
+
   return (
     <>
   <div className="w-full h-[800px] flex flex-col items-center bg-[#EFF7F2] ">
-        <div className="w-[90%] h-[70%] flex items-center">
+        <div ref={newsRef} className="w-[90%] h-[70%] flex items-center">
           <div className="h-[60%] w-[50%] gap-y-6 flex flex-col items-start justify-around pl-14 ml-11">
             <h3 className="text-base font-bold before  relative uppercase">
               Top our News
@@ -57,7 +89,7 @@ const Media = () => {
           </div>
           </div>
            <div className="w-full h-[550px] flex items-center justify-center">
-        <div className="w-[85%] h-[90%] flex flex-col justify-between mt-32">
+        <div ref={circleRef} className="w-[85%] h-[90%] flex flex-col justify-between mt-32">
           <h2 className="text-[#1D2130] font-bold text-5xl text-center">
            
             Read Our Recent News
@@ -75,7 +107,7 @@ const Media = () => {
         </div>
       </div>
       <div className="w-full h-[550px] flex items-center justify-center">
-          <div className="w-[85%] h-[70%] flex flex-col justify-around">
+          <div ref={eventRef} className="w-[85%] h-[70%] flex flex-col justify-around">
             <h2 className="text-[#1D2130] font-medium text-[40px] relative left-line">
               Our Events
             </h2>

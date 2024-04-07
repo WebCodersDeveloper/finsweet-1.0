@@ -1,19 +1,140 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import What1 from '../components/What1'
 import Whatenvironment from '../components/Whatenvironment'
 import Cards3 from '../components/Cards3'
 import {ourNews}  from '../components/news'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoPlayCircle } from "react-icons/io5";
-
+import ScrollReveal from "scrollreveal";
+import { info } from 'autoprefixer'
 const Wedo = () => {
+  const titlRef = useRef(null);
+   const titleRef = useRef(null);
+  const btnRef = useRef(null);
+  const topRef = useRef(null);
+  const brandRef = useRef(null);
+  const containerRef = useRef(null);
+  const infoRef = useRef(null);
+  const bottomRef = useRef(null);
+  const statusRef = useRef(null);
+  const bannerRef = useRef(null);
+  const newsRef = useRef(null);
+  const eventRef = useRef(null);
+  const circleRef = useRef(null);
+
+  useEffect(() => {
+    ScrollReveal().reveal(titlRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+       ScrollReveal().reveal(titleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(eventRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(topRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(bannerRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(containerRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(btnRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(statusRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(brandRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(infoRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(circleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(newsRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(bottomRef.current, {
+      origin: 'bottom',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  },[])
   return (
     <>
     <What1/>
     <Whatenvironment/>
     <Cards3/>
      <div className="w-full h-[550px] flex items-center justify-center">
-        <div className="w-[85%] h-[90%] flex flex-col justify-between">
+        <div ref={statusRef} className="w-[85%] h-[90%] flex flex-col justify-between">
           <h2 className="text-[#1D2130] font-medium text-[40px] relative left-line">
             Read Our News
           </h2>
@@ -29,7 +150,7 @@ const Wedo = () => {
         </div>
       </div>
       <div className="w-full h-[550px] flex items-center justify-center">
-          <div className="w-[85%] h-[70%] flex flex-col justify-between">
+          <div ref={infoRef} className="w-[85%] h-[70%] flex flex-col justify-between">
             <h2 className="text-[#1D2130] font-medium text-[40px] relative left-line">
               Our Events
             </h2>

@@ -1,10 +1,32 @@
+import { useEffect, useRef } from "react";
 import logo from "../assets/galochka.png";
-
+import ScrollReveal from "scrollreveal";
 const Contact = () => {
+   const newsRef = useRef(null);
+  const circleRef = useRef(null);
+
+  useEffect(() => {
+    ScrollReveal().reveal(newsRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+       ScrollReveal().reveal(circleRef.current, {
+      origin: 'bottom',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  })
   return (
     <>
       <div className="w-full bg-[#EBF0F9]">
-        <div className=" mt-24 mb-20  flex items-start justify-between w-[90%] m-auto">
+        <div ref={newsRef} className=" mt-24 mb-20  flex items-start justify-between w-[90%] m-auto">
           <div className=" ">
             <span className="flex items-center  gap-x-2">
               <span className=" w-[72px] h-px bg-gray-700 "></span>
@@ -52,7 +74,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="w-[60%] my-20">
+      <div ref={circleRef} className="w-[60%] my-20">
         <div className="w-[100%] grid grid-cols-2 items-center justify-between gap-y-6 mb-4">
           <span className="">
             <label htmlFor="">First Name</label>

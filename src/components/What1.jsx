@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import wedo1 from './img/wedo1.png'
-
+import ScrollReveal from "scrollreveal";
 
 const What1 = () => {
-  return (
-    <div className=' mt-24 mb-20  flex items-start justify-between w-[90%]'>
+   const titlRef = useRef(null);
+ useEffect(() => {
+    ScrollReveal().reveal(titlRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  })
+      return (
+    <div ref={titlRef} className=' mt-24 mb-20  flex items-start justify-between w-[90%]'>
 <div className=' '>
     <span className='flex items-center  gap-x-2'><span className=' w-[72px] h-px bg-gray-700 '></span><span className='text-xl font-semibold leading-6 uppercase text-custom-color'>What we do</span></span>
 <h1 className='ml-20 text-custom-color mt-5 font-bold text-6xl leading-[120%] tracking-normal text-left w-[500px]'>We are working worldwide</h1>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import people from '../components/img/people.png'
 import Logo1 from "../assets/Logo1.svg";
 import Logo2 from "../assets/Logo2.svg";
@@ -12,11 +12,135 @@ import { Person } from '../components/awards';
 import {ourNews} from '../components/news'
 import { Link } from 'react-router-dom';
 import { FaArrowRightLong } from "react-icons/fa6";
+import ScrollReveal from "scrollreveal";
+
+
 
 const AboutUs = () => {
+
+ const titlRef = useRef(null);
+   const titleRef = useRef(null);
+  const btnRef = useRef(null);
+  const topRef = useRef(null);
+  const brandRef = useRef(null);
+  const containerRef = useRef(null);
+  const infoRef = useRef(null);
+  const bottomRef = useRef(null);
+  const statusRef = useRef(null);
+  const bannerRef = useRef(null);
+  const newsRef = useRef(null);
+  const eventRef = useRef(null);
+  const circleRef = useRef(null);
+
+  useEffect(() => {
+    ScrollReveal().reveal(titlRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+       ScrollReveal().reveal(titleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(eventRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(topRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(bannerRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(containerRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(btnRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(statusRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(brandRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(infoRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(circleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(newsRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+    ScrollReveal().reveal(bottomRef.current, {
+      origin: 'bottom',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  },[])
   return (
     <>
-  <div className=' mt-24 mb-20  flex  justify-between w-[90%]'>
+  <div ref={titlRef} className=' mt-24 mb-20  flex  justify-between w-[90%]  '>
 <div className=' '>
     <span className='flex items-center  gap-x-2'><span className=' w-[72px] h-px bg-gray-700 '></span><span className='text-xl font-semibold leading-6 uppercase text-custom-color'>Know about us</span></span>
 <h2 className='ml-20 text-custom-color mt-5 font-bold text-5xl leading-[120%] tracking-normal text-left w-[600px]'>We are a nonprofit team working worldwide</h2>
@@ -28,8 +152,8 @@ const AboutUs = () => {
 </div>
     </div>
     
-   <img className='relative top-0 max-auto' src={people} alt="people" />
-   <div className='bg-[#EFF7F2] w-full '>
+   <img ref={titleRef} className='relative top-0 max-auto' src={people} alt="people" />
+   <div ref={btnRef} className='bg-[#EFF7F2] w-full '>
    <div className='w-[90%] flex justify-evenly items-center my-20 mx-auto '>
 <div className='flex flex-col justify-center'>
   <span className=' font-roboto text-base font-bold leading-4 tracking-wider uppercase text-left '>our mission</span>
@@ -51,7 +175,7 @@ const AboutUs = () => {
           <img src={Logo6} alt="" />
         </div>
    </div>
-   <div className='w-[90%] my-24 '>
+   <div ref={eventRef} className='w-[90%] my-24 '>
     <h3 className='text-4xl font-bold leading-normal tracking-normal text-center'>Awards & Recognitions</h3>
    <div className="flex   items-center mx-auto mt-10 justify-evenly ">
     {Awards.map((item, index) => (
@@ -72,7 +196,7 @@ const AboutUs = () => {
               ))}
               </div>
    </div>
-   <div className='w-[90%] flex py-16 pl-20 bg-black rounded-xl justify-between items-center mb-20'>
+   <div ref={topRef} className='w-[90%] flex py-16 pl-20 bg-black rounded-xl justify-between items-center mb-20'>
 <div className='flex flex-col gap-y-3 '>
   <span className='text-white font-roboto text-lg font-bold leading-19 tracking-wider text-left uppercase'>OUR JOURNEY </span>
   <h2 className='text-white font-roboto text-5xl font-bold leading-normal tracking-normal text-left'>How we raised 34M</h2>
@@ -88,7 +212,7 @@ const AboutUs = () => {
 </div>
 </div>
 
-<div className='w-[90%] '>
+<div ref={brandRef} className='w-[90%] '>
   <h2 className='font-roboto text-4xl font-bold leading-normal tracking-normal text-center'>Meet our team</h2>
   <p className='text-gray-700 font-roboto text-base font-normal leading-relaxed tracking-normal text-center opacity-60 m-auto w-[520px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
  <div className="grid grid-cols-4  items-center  mt-10 mb-6 justify-between gap-y-12 ">
@@ -112,7 +236,7 @@ const AboutUs = () => {
 
 </div>
 
-  <div className="w-full h-[500px] py-4 flex items-center justify-center">
+  <div ref={containerRef} className="w-full h-[500px] py-4 flex items-center justify-center">
         <div  className="w-[85%] h-[80%] overflow-hidden bg-donate bg-standart rounded-xl">
           <div className="w-full h-full bg-[#0000007b] flex flex-col items-center justify-center gap-16">
             <h2 className="text-white w-[631px] text-center font-bold text-5xl">
@@ -130,7 +254,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="w-full h-[550px] flex items-center justify-center">
-        <div className="w-[85%] h-[90%] flex flex-col justify-between">
+        <div ref={infoRef} className="w-[85%] h-[90%] flex flex-col justify-between">
           <h2 className="text-[#1D2130] font-medium text-[40px] relative left-line">
             Read Our News
           </h2>
@@ -145,8 +269,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[500px] flex items-center justify-center">
-          <div  className="w-[85%] h-[95%] flex flex-col justify-evenly">
+      <div  className="w-full h-[500px] flex items-center justify-center">
+          <div ref={bannerRef} className="w-[85%] h-[95%] flex flex-col justify-evenly">
             <h2 className="text-[#1D2130] font-medium text-[40px] relative left-line">
               Our Events
             </h2>

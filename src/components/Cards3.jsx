@@ -1,10 +1,30 @@
-import React from 'react'
-
+import React, { useEffect, useRef } from 'react'
+import ScrollReveal from 'scrollreveal';
 const Cards3 = () => {
+    const titleRef = useRef(null);
+  const titlRef = useRef(null);
+ useEffect(() => {
+    ScrollReveal().reveal(titlRef.current, {
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+     ScrollReveal().reveal(titleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  })
   return( 
   <>
-     <div className="flex items-center justify-center w-full mt-24 h-[550px] bg-white">
-        <div className="w-[90%] h-[90%] flex flex-col items-center justify-center gap-20">
+     <div  className="flex items-center justify-center w-full mt-24 h-[550px] bg-white">
+        <div ref={titlRef} className="w-[90%] h-[90%] flex flex-col items-center justify-center gap-20">
           <div className="w-full flex flex-col gap-4 pl-10">
             <h3 className="text-base font-bold mx-auto relative uppercase">
               Projects we have done
@@ -60,7 +80,7 @@ const Cards3 = () => {
         </div>
       </div>
        <div className="w-full h-[600px] py-4 flex items-center justify-center">
-        <div className="w-[87%] h-[60%] overflow-hidden bg-donate bg-standart rounded-xl">
+        <div ref={titleRef} className="w-[87%] h-[60%] overflow-hidden bg-donate bg-standart rounded-xl">
           <div className="w-full h-full bg-[#0000007b] flex flex-col items-center justify-center gap-16">
             <h2 className="text-white w-[631px] text-center font-bold text-5xl">
               You can contribute to make the environment greener!

@@ -89,3 +89,28 @@
     top: 50%;
     left: 105%;
 }
+.bg-heroBg{
+    background-image: url(image/heroBannner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bg-tree{
+    background-image: url(image/bgTree.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bg-city{
+    background-image: url(image/bgCity.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bg-wildlife{
+    background-image: url(image/bgWildlife.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bg-donate{
+    background-image: url(image/donateBg.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

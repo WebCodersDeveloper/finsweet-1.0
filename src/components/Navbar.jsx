@@ -22,7 +22,7 @@ export default function Navbar() {
                 <Link to='/contact' className='font-roboto text-base text-[#525560] focus-within:text-black focus-within:font-medium'>Contact</Link>
             </li>
             <li className='bg-[#1D2130] flex items-center justify-center rounded-md  w-[115px] h-[43px] focus-within:bg-none'>
-                <Link to='/donate' className='font-roboto rounded-md text-base text-white focus-within:font-medium'>Donate</Link>
+                <Link to='/donate' className='font-roboto rounded-md text-base text-white focus-within:font-medium'>Donatesa</Link>
             </li>
         </ul>
     </div>
